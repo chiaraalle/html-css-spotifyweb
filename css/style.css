@@ -7,7 +7,15 @@ main {
     background-color: lightslategray;
     height: 100%;
     width: 20%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.sidebar__img img {
+    width: 20px;
 }
 
 .btn.upgrade {
@@ -24,5 +32,5 @@ main {
 
 footer {
     background-color: rgb(184, 175, 175);
-    height: 20vh;
+    height: 15vh;
 }
