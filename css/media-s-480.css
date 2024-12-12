@@ -1,0 +1,19 @@
+@media screen and (min-width: 480px) {
+    .btn-upgrade {
+        font-size: 1rem;
+    }
+
+    .sidebar__img > img:last-child {
+        display: block;
+    }
+
+    .sidebar__img > img:first-child {
+        display: none;
+    }
+
+    .menu > a {
+        display: inline-block;
+        font-size: 0.8rem;
+    }
+    
+}

@@ -5,31 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
 
+    <script src="https://kit.fontawesome.com/1948ca2821.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/debug.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/media-s-480.css">
+    <link rel="stylesheet" href="./css/media-m-768.css">
+    <link rel="stylesheet" href="./css/media-l-1024.css">
 
 </head>
 <body>
     <main>
     <!--Sidebar-->
         <div class="sidebar">
-            <div>
-                <figure class="sidebar__img">
-                <img src="./img/logo-small.svg" alt="logo spotify">
-                </figure>
-                <div>
-                <a href="">cerca</a>
+            <div class="sidebar__top">
+                <a href="" class="sidebar__img">
+                    <img width="25px" src="./img/logo-small.svg" alt="logo small spotify">
+                    <img width="100px" src="./img/logo.svg" alt="logo spotify">
+                </a>
+                <div class="menu">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="">cerca</a>
                 </div>
-                <div>
-                <a href="">home</a>
+
+                <div class="menu">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="">home</a>
                 </div>
-                <div>
-                <a href="">la tua libreria</a>
+                <div class="menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <a href="">la tua libreria</a>
                 </div>
             </div>
 
-            <div>
+            <div class="playlist"> 
+
+            </div>
+
+            <div class="sidebar__bottom">
                 <span>arrow</span>
                 <span>profile</span>
             </div>
@@ -38,10 +53,8 @@
     <!--contenuto-->
         <div class="container">
             <!--button upgrade-->
-            <div class="container__header"> 
-               <div class="btn-upgrade">
-                <a href="#">EFFETTUA L'UPGRADE</a>
-            </div>
+            <div class="btn-upgrade">
+                <a href="#">effettua l'upgrade</a>
             </div>
             <!--Liberia musicale-->
             <div class="library">
