@@ -11,10 +11,10 @@ body {
 }
 
 main {
-    height: 90vh;
+    /*height: 90vh;*/
     color: white;
     display: flex;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 .sidebar {
@@ -23,7 +23,16 @@ main {
     flex-direction: column;
     padding: 10px 0 0 0;
     justify-content: space-between;
-    
+
+}
+
+.sidebar-top {
+    height: calc(100% - 100px);
+    overflow: auto;
+}
+
+.sidebar-bottom {
+    height: 100px;
 }
 
 .sidebar__menu {
@@ -102,7 +111,6 @@ main {
 
 
 .sidebar__profile{
-    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,8 +129,9 @@ main {
     border-radius: 50%;
     background-color: #808080;
 }
+ 
 
-.container {
+.music-layout {
     /*width: 80%;*/
     flex-basis: 90%;
 }
@@ -146,23 +155,46 @@ main {
     
 }
 
-.library__nav {
+.library__menu ul {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 10px;
-    padding: 15px;
     justify-content: center;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.cards-music {
+.library__menu ul li:hover {
+    border-bottom: 3px solid #ADFF2F;
+}
+
+.library__menu ul li a:hover {
+    color: white;
+
+}
+
+.album-cards {
     display: flex;
+    align-items: center;
+    gap: 10px;
     flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.album__card {
+   flex-basis: calc(100% / 2 - 10px);
+   text-transform: capitalize;
+   text-align: center;
+   flex-grow: 1;
 } 
 
-
-.card__music > div {
-    padding: 30px;
+.album__card span {
+    color: #5C5C5C;;
 }
+
 
 footer {
     background-color: var(--footer);
