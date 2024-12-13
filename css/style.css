@@ -189,7 +189,17 @@ main {
    text-transform: capitalize;
    text-align: center;
    flex-grow: 1;
+   margin-block: 10px;
 } 
+
+.album__card img {
+    width: 100%;
+}
+
+.album__card h3 {
+    padding-inline: 10px;
+    font-size: 0.7rem;
+}
 
 .album__card span {
     color: #5C5C5C;;
