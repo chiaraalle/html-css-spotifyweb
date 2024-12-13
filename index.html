@@ -20,16 +20,18 @@
     <main>
     <!--Sidebar-->
         <div class="sidebar">
-            <div class="sidebar__menu">
-                <a href="" class="sidebar__logo">
-                    <img width="25px" src="./img/logo-small.svg" alt="logo small spotify">
-                    <img width="100px" src="./img/logo.svg" alt="logo spotify">
-                </a>
-                <div class="icons search">
-                    <a href="">
-                        <i class="fa-solid fa-house"></i>
-                        <span>cerca</span>
+        
+            <div class="sidebar-top">
+                <div class="sidebar__menu">
+                    <a href="" class="sidebar__logo">
+                        <img width="25px" src="./img/logo-small.svg" alt="logo small spotify">
+                        <img width="100px" src="./img/logo.svg" alt="logo spotify">
                     </a>
+                    <div class="icons search">
+                        <a href="">
+                            <i class="fa-solid fa-house"></i>
+                            <span>cerca</span>
+                        </a>
                 </div>
 
                 <div class="icons home">
@@ -44,18 +46,19 @@
                         <span>la tua libreria</span>
                     </a>
                 </div>
-            </div>
+                </div>
 
-            <div class="sidebar__playlist"> 
-                <div class="playlist">
-                    <h4>playlist</h4>
-                    <a href="">
-                        <div class="playlist__icon">
-                            <i class="fa-solid fa-plus"></i>
-                        </div>     
-                            <span>crea playlist</span>
-                    </a>        
-                
+                <div class="sidebar__playlist"> 
+                    <div class="playlist">
+                        <h4>playlist</h4>
+                        <div class="add-playlist">
+                            <a href="">
+                                <div class="playlist__icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>     
+                                <span>crea playlist</span>
+                            </a>        
+                    </div>
                     <ul>
                         <li><a href="">nome playlist</a></li>
                         <li><a href="">nome playlist</a></li>
@@ -66,14 +69,22 @@
                     
                     </ul>
                 </div>
-
-            </div>
-
-            <div class="sidebar__profile">
-                <span>arrow</span>
-                <span>profile</span>
+                </div>
             </div>
             
+            <div class="sidebar-bottom">
+            <div class="sidebar__profile">
+                <a href="">
+                    <img width="15px" src="./img/download.svg" alt="icona download">
+                    <span>installa app</span>
+                </a>
+                <hr>
+                <a href="">
+                    <img width="15px" src="./img/profile.svg" alt="icona profilo">
+                    <span><strong>John Doe</strong></span>
+                </a>
+            </div>
+            </div>   
         </div>
     <!--contenuto-->
         <div class="container">

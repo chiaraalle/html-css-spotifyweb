@@ -21,10 +21,9 @@ main {
     background-color: var(--sidebar);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 10px 0 0 0;
     justify-content: space-between;
-    flex-basis: 10%;
-    padding: 10px;
+    
 }
 
 .sidebar__menu {
@@ -35,16 +34,23 @@ main {
     padding: 10px;
 }
 
+.sidebar__menu > .icons {
+    padding-inline: 10px;
+    
+}
+
 .sidebar__menu > div.icons:hover {
     border-left: 3px solid #ADFF2F;
 
 }
-.sidebar__logo > img:last-child {
-    display: none;
+
+.sidebar__menu > div.icons a:hover {
+    color: white;
+
 }
 
-.sidebar__profile{
-    height: 100px;
+.sidebar__logo > img:last-child {
+    display: none;
 }
 
 .icons > a span {
@@ -58,9 +64,18 @@ main {
 .playlist {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
+    padding-inline: 20px;
+}
+
+.playlist h4 {
+    color: white;
+}
+
+.add-playlist a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .playlist__icon {
@@ -73,6 +88,38 @@ main {
     justify-content: center;
     align-items: center;
 
+}
+
+.playlist ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.playlist ul li a {
+    text-transform: capitalize;
+}
+
+
+.sidebar__profile{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-inline: 20px;
+    
+}
+
+.sidebar__profile a span, 
+.sidebar__profile hr {
+    display: none;
+}
+
+.sidebar__profile a img[alt="icona profilo"] {
+    border-radius: 50%;
+    background-color: #808080;
 }
 
 .container {
