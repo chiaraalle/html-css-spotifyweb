@@ -3,17 +3,26 @@
         font-size: 1rem;
     }
 
-    .sidebar__img > img:last-child {
+    .sidebar__logo > img:last-child {
         display: block;
     }
 
-    .sidebar__img > img:first-child {
+    .sidebar__logo > img:first-child {
         display: none;
     }
 
-    .menu > a {
+    .sidebar__menu {
+        align-items: flex-start;
+       
+    }
+
+    
+    .icons > a span {
+        display: inline;
+    }
+
+    .sidebar__playlist {
         display: inline-block;
-        font-size: 0.8rem;
     }
     
 }

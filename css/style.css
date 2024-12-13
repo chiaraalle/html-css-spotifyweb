@@ -2,7 +2,7 @@
     --sidebar: #000000;
     --btn: rgba(8, 11, 18, 0.5);
     --body: #141922;
-    --footer: #141922;
+    --footer: #282828;
 
 }
 
@@ -24,28 +24,55 @@ main {
     align-items: center;
     justify-content: space-between;
     flex-basis: 10%;
-    padding: 5px;
-
+    padding: 10px;
 }
 
-.sidebar__top {
-    height: calc (100% - 100px);
+.sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
 }
 
-.sidebar__top > div.menu:hover {
+.sidebar__menu > div.icons:hover {
     border-left: 3px solid #ADFF2F;
 
 }
-.sidebar__img > img:last-child {
+.sidebar__logo > img:last-child {
     display: none;
 }
 
-.sidebar__bottom{
+.sidebar__profile{
     height: 100px;
 }
 
-.menu > a {
+.icons > a span {
     display: none;
+}
+
+.sidebar__playlist {
+    display: none;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.playlist__icon {
+    background-color: #A3A3A3;
+    border: 1px solid #A3A3A3;
+    height: 25px;
+    width: 25px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container {
