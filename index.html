@@ -32,20 +32,21 @@
                             <i class="fa-solid fa-house"></i>
                             <span>cerca</span>
                         </a>
-                </div>
+                    </div>    
 
-                <div class="icons home">
-                    <a href="">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span>home</span>
-                    </a>
-                </div>
-                <div class="icons bars">
-                    <a href="">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                        <span>la tua libreria</span>
-                    </a>
-                </div>
+                    <div class="icons home">
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>home</span>
+                        </a>
+                    </div>
+
+                    <div class="icons bars-menu">
+                        <a href="">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                            <span>la tua libreria</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="sidebar__playlist"> 
@@ -58,18 +59,20 @@
                                 </div>     
                                 <span>crea playlist</span>
                             </a>        
-                    </div>
-                    <ul>
-                        <li><a href="">nome playlist</a></li>
-                        <li><a href="">nome playlist</a></li>
-                        <li><a href="">nome playlist</a></li>
-                        <li><a href="">nome playlist</a></li>
-                        <li><a href="">nome playlist</a></li>
-                        <li><a href="">nome playlist</a></li>
+                        </div>
+
+                        <ul>
+                            <li><a href="">nome playlist</a></li>
+                            <li><a href="">nome playlist</a></li>
+                            <li><a href="">nome playlist</a></li>
+                            <li><a href="">nome playlist</a></li>
+                            <li><a href="">nome playlist</a></li>
+                            <li><a href="">nome playlist</a></li>
                     
-                    </ul>
+                        </ul>
+                    </div>    
                 </div>
-                </div>
+                
             </div>
 
             <div class="sidebar-bottom">
@@ -109,11 +112,12 @@
                 
             </div>
             
-            <!--cards album-->
+            <!--cards album recently played-->
 
             <h2>Recently played</h2>
 
             <div class="album-cards">
+
                 <div class="album__card">
                     <!--
                     <div class="icon-play">
@@ -164,29 +168,123 @@
 
             </div>
 
+            <!--cards favourite album -->
+
+            <div class="cards-title">
+                <h2>creato per john doe</h2>
+                <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+            </div>
+
+            <div class="album-cards">
+                <div class="album__card"> 
+                    <figure>
+                        <img src="./img/radar.jpeg" alt="mix album radar">
+                     </figure> 
+                    <h3>release radar</h3>
+                </div>
+
+                <div class="album__card"> 
+                    <figure>
+                        <img src="./img/mixdaily.jpeg" alt="mix daily album">
+                     </figure> 
+                    <h3>daily mix 1</h3>
+                </div>
+
+            </div>
+
+            <!--cards popular artist -->
+
+            <div class="cards-title">
+                <h2>artisti più popolari</h2>
+                <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+            </div>    
+
+            <div class="album-cards">
+                <div class="album__card"> 
+                    <figure>
+                        <img src="./img/youg.jpeg" alt="popolar artist lana del ray">
+                     </figure> 
+                    <h3>lana del ray</h3>
+                </div>
+
+                <div class="album__card"> 
+                    <figure>
+                        <img src="./img/einaudi.jpeg" alt="popolar artist einaudi">
+                     </figure> 
+                    <h3>ludovico einaudi</h3>
+                </div>
+
+            </div>
+
             
         </div>
     </main>
 
 
     <footer>
-        <div class="container-footer">
-            <div>
-            <div class="footer-img"><!--foto in float--></div>
+        <div class="played-song">
+            <!--brano riprodotto-->
+            <div class="played-song__info">
+                <figure>
+                    <img src="./img/sinister.jpeg" alt="played music sinister">
+                </figure>
+                <div class="played-song__text">
+                    <h4>sinister</h4>
+                    <span>brano nome</span>
+                </div>
+                <div class="played-song__icons">
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </div>
+            </div>
+           
+
+            <!--barra musica-->
             <div class="music-player">
-                <h4>sinister</h4>
-                <span>nome</span>
-                <span>brano</span>
-            </div>
+
+                <div class="music-player__icons">
+
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+        
+                <div class="music-player__bars">
+                    <span>0:25</span>
+                    <div class="bars">
+                        <div class="bars__started-music">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <span>4:35</span>
+                </div>
             </div>
 
-            <div class="icons">
-            <div>cuore</div>
-            <div>file</div>
+            <!--setting-->
+            <div class="setting">
+                <div class="setting__icons">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="setting__bars">
+                    <div class="bars">
+                        <div class="bars__full">
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
+        </div>
             
-        </div>    
+       
     </footer>
     
 </body>

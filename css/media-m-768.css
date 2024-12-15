@@ -1,6 +1,61 @@
 @media screen and (min-width: 768px) {
     .album__card {
         flex-basis: calc(100% / 4 - 10px);
-        
+        flex-grow: 0;
      } 
+
+     .played-song {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .played-song figure img {
+        width: 70px;
+
+    }
+
+    .played-song__info {
+        gap: 20px;
+    }
+
+    .played-song__text,
+    .music-player__bars span {
+        font-size: 1rem;
+    }
+
+    .played-song__text,
+    .played-song__icons,
+    .music-player__icons,
+    .setting__icons {
+
+        font-size: 1rem;
+    } 
+
+    .music-player__bars,
+    .music-player__icons,
+    .setting__icons {
+        gap: 20px;
+    }
+
+    .bars {
+        width: 100px;
+
+    }
+
+    .bars__started-music {
+        width: 40%;
+    }
+
+
+    
+
+
+    .setting {
+        gap: 5px;
+        padding: 10px 10px;
+    
+    }
 }

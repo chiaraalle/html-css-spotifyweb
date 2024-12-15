@@ -45,7 +45,57 @@
         width: 90%;
     }
 
+    .played-song {
+        justify-content: space-between;
+    }
 
+    .played-song figure img {
+        width: 50px;
+        float: inline-start;
+    }
 
+    .played-song__info {
+        gap: 10px;
     
+    }
+
+    .played-song__text,
+    .music-player__bars span {
+        font-size: 0.8rem;
+    }
+
+    .played-song__text,
+    .played-song__icons,
+    .music-player__icons,
+    .setting__icons {
+
+        font-size: 0.8rem;
+    } 
+
+    .fa-solid.fa-play {
+        border: 3px solid white;
+        border-radius: 50%;
+        padding: 5px 5px;
+        text-align: center; 
+        height: 30px;
+        width: 30px;
+        
+    }
+
+    .music-player__bars,
+    .music-player__icons,
+    .setting__icons {
+        gap: 10px;
+    }
+
+    .bars {
+        width: 80px;
+    }
+
+    .bars__started-music {
+        width: 50%;
+    }
+
+
+
 }

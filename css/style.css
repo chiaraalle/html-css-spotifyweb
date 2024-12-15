@@ -11,12 +11,13 @@ body {
 }
 
 main {
-    /*height: 90vh;*/
+    height: 90vh;
     color: white;
     display: flex;
-    /*overflow: auto;*/
+
 }
 
+/*css sidebar*/
 .sidebar {
     background-color: var(--sidebar);
     display: flex;
@@ -33,6 +34,7 @@ main {
 
 .sidebar-bottom {
     height: 100px;
+
 }
 
 .sidebar__menu {
@@ -53,7 +55,10 @@ main {
 
 }
 
-.sidebar__menu > div.icons a:hover {
+.sidebar__menu > div.icons a:hover,
+.playlist__icon:hover,
+.sidebar__playlist li > a:hover,
+.sidebar__profile span:hover{
     color: white;
 
 }
@@ -128,12 +133,25 @@ main {
 .sidebar__profile a img[alt="icona profilo"] {
     border-radius: 50%;
     background-color: #808080;
+   
 }
  
+/*music layout*/
 
 .music-layout {
-    /*width: 80%;*/
+    
     flex-basis: 90%;
+    overflow: scroll;
+}
+
+.cards-title h2 {
+    text-transform: capitalize;
+    margin-top: 15%;
+}
+
+.music-layout span {
+    color: #5C5C5C;
+
 }
 
 .btn-upgrade {
@@ -183,6 +201,7 @@ main {
     flex-wrap: wrap;
     margin-top: 10px;
     font-size: 0.7rem;
+    margin-block: 10px;
 }
 
 .album__card {
@@ -191,11 +210,14 @@ main {
    text-align: center;
    flex-grow: 1;
 
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
    max-height: 140px;
    padding-inline: 10px;
    margin-block: 15px;
 
-   position: relative;
 } 
 
 
@@ -203,9 +225,12 @@ main {
     width: 100%;
 }
 
-.album__card span {
-    color: #5C5C5C;;
+.album__card figure img[alt="popolar artist lana del ray"],
+.album__card figure img[alt="popolar artist einaudi"] {
+    border-radius: 50%;
 }
+
+
 
 /*.icon-play{
     position: absolute;
@@ -224,30 +249,113 @@ main {
 } */
 
 
+/*footer music player*/
+
 footer {
     background-color: var(--footer);
     height: 10vh;
-    overflow: auto;
 } 
 
-.container-footer {
+
+.played-song {
     display: flex;
-    gap: 10px;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
 }
+
+.played-song figure img {
+    width: 30px;
+    float: inline-start;
+}
+
+.played-song__info {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.played-song__text,
+.music-player__bars span {
+    text-transform: capitalize;
+    font-size: 0.6rem;
+}
+
+.played-song__text,
+.played-song__icons,
+.music-player__icons,
+.setting__icons {
+    color: white;
+    font-size: 0.5rem;
+} 
 
 .music-player {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    align-items: center;
 }
 
-.footer-img {
-    border: 1px solid black;
-    background-color: white;
-    padding: 30px;
-    float: inline-start;
+.fa-solid.fa-play {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 5px 5px;
+    text-align: center; 
+    height: 20px;
+    width: 20px;
+    
 }
 
-.icons {
+.music-player__bars,
+.music-player__icons,
+.setting__icons {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: white;
+}
+
+.bars {
+    background-color: #5A5A5A;
+    width: 60px;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+.bars__started-music {
+    background-color: #C1C1C1;
+    width: 60%;
+    padding: 2px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.bars__full {
+    background-color: #C1C1C1;
+    width: 20%;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+.circle {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    border-radius: 50% ;
+    position: absolute;
+    left: 30px;
+    bottom:-3px;
+
+}
+
+.setting {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    padding: 5px 5px;
+
 }
